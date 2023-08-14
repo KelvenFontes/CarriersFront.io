@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Inclua o link para a biblioteca FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Carrier Management</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="my-4 text-center">Carrier Management System</h1>
+
+    <div id="message" class="alert mt-3" style="display: none;"></div>
+
+    <div class="row">
+
+      <div class="col-md-4">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Search</h5>
+            <div class="mb-3">
+              <button id="searchButton" class="btn btn-primary btn-block btn-icon">
+                Search <i class="fas fa-search"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt-4">
+          <div class="card-body">
+            <h5 class="card-title">Search by CNPJ</h5>
+            <!-- Para a função getCarrierByCnpj -->
+            <input type="text" id="getCnpj" class="form-control mb-3" placeholder="Enter CNPJ">
+            <button id="getCnpjButton" class="btn btn-primary btn-block">Search</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Create Carrier</h5>
+            <!-- Campos para a função de criação -->
+            <input type="text" id="cnpj" class="form-control mb-3" placeholder="CNPJ">
+            <input type="text" id="corporateName" class="form-control mb-3" placeholder="Corporate Name">
+            <input type="text" id="fantasyName" class="form-control mb-3" placeholder="Fantasy Name">
+            <input type="text" id="address" class="form-control mb-3" placeholder="Address">
+            <input type="text" id="city" class="form-control mb-3" placeholder="City">
+            <input type="text" id="uf" class="form-control mb-3" placeholder="UF">
+            <input type="text" id="postalCode" class="form-control mb-3" placeholder="Postal Code">
+            <input type="text" id="phone" class="form-control mb-3" placeholder="Phone">
+            <input type="text" id="email" class="form-control mb-3" placeholder="Email">
+            <button id="create" class="btn btn-primary btn-block">Create</button>
+          </div>
+        </div>
+
+        <div class="card mt-4">
+          <div class="card-body">
+            <h5 class="card-title">Update Carrier</h5>
+            <!-- Campos para a função de atualização -->
+            <input type="text" id="updateId" class="form-control mb-3" placeholder="Carrier ID">
+            <!-- <input type="text" id="updateCnpj" class="form-control mb-3" placeholder="CNPJ"> -->
+            <input type="text" id="updateCorporateName" class="form-control mb-3" placeholder="Corporate Name">
+            <input type="text" id="updateFantasyName" class="form-control mb-3" placeholder="Fantasy Name">
+            <input type="text" id="updateAddress" class="form-control mb-3" placeholder="Address">
+            <input type="text" id="updateCity" class="form-control mb-3" placeholder="City">
+            <input type="text" id="updateUF" class="form-control mb-3" placeholder="UF">
+            <input type="text" id="updatePostalCode" class="form-control mb-3" placeholder="Postal Code">
+            <input type="text" id="updatePhone" class="form-control mb-3" placeholder="Phone">
+            <input type="text" id="updateEmail" class="form-control mb-3" placeholder="Email">
+
+            <div class="toggle">
+              <input type="checkbox" id="updateIsActiveToggle" class="toggle-input">
+              <label for="updateIsActiveToggle" class="toggle-label"></label>
+            </div>
+            <p id="isActiveText" class="active-text">Ativo</p>                                                                 
+
+            <button id="update" class="btn btn-primary btn-block">Update</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">All Carriers</h5>
+            <ul id="carriersList" class="list-group">
+              <!-- Carriers will be dynamically added here -->
+            </ul>
+            <nav id="pagination" aria-label="Page navigation" class="mt-3">
+              <ul class="pagination justify-content-center">
+                <!-- Pagination links will be dynamically added here -->
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

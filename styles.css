@@ -1,0 +1,269 @@
+/* Estilos personalizados */
+
+/* Estilo para os cards */
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para os títulos dos cards */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Estilo para os corpos dos cards */
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Estilo para os inputs nos cards */
+.card-body input {
+  margin-bottom: 0.5rem;
+}
+
+/* Estilo para os botões nos cards */
+.card-body .btn-primary {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.card-body .btn-primary:hover,
+.card-body .btn-primary:focus {
+  background-color: #138496;
+  border-color: #138496;
+  color: white;
+  border-radius: 20px;
+  box-shadow: none;
+}
+
+.card-body .btn-primary:active {
+  background-color: #0f6c7c;
+  border-color: #0f6c7c;
+  color: white;
+  border-radius: 20px;
+  box-shadow: none;
+}
+
+
+
+
+
+
+/* Estilo para o card de resultados */
+#carriersList {
+  margin-top: 2rem;
+  border-radius: 20px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+}
+
+#carriersList .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333; /* Cor do título */
+}
+
+#carriersList .card-body {
+  padding: 1.5rem;
+  background-color: #f8f9fa; /* Cor de fundo do card */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#carriersList .list-group-item {
+  display: block;
+  background-color: #ccc; /* Cor de fundo do item da lista */
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1); /* Sombreamento inicial */
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+#carriersList .list-group-item:hover {
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2); /* Sombreamento maior no hover */
+  background-color: #f0f0f0; /* Cor de fundo no hover */
+}
+
+#carriersList .list-group-item h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333; /* Cor do título */
+  font-weight: bold;
+}
+
+#carriersList .list-group-item p {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  color: #666; /* Cor do texto */
+}
+
+
+
+
+
+
+
+
+/* Estilizar os botões com FontAwesome */
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Ícone à direita nos botões */
+.btn-icon i {
+  margin-left: 5px;
+}
+
+/* Mensagem de sucesso */
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+/* Mensagem de erro */
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+
+/* Espaçamento entre os botões de busca */
+#searchButton,
+#getCnpjButton {
+  margin-top: 10px;
+}
+
+/* Ajustes de margem */
+.mt-3 {
+  margin-top: 1rem !important;
+}
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+
+
+
+
+
+/* Estilo para o botão de busca */
+.btn-primary {
+  background-color: #17a2b8; /* Verde-água */
+  border: 2px solid #17a2b8 ;
+  color: white; /* Texto em branco */
+  border-radius: 20px; /* Bordas redondas */
+  font-weight: bold; /* Texto em negrito */
+  box-shadow: none; /* Remove a sombra ao clicar */
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+
+/* Efeito de hover no botão de busca */
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #fff; /* Mesma cor de fundo do botão */
+  border: 2px solid #17a2b8 ;
+  color: #17a2b8; /* Texto e bordas em verde-água */
+  border-radius: 20px; /* Mantém as bordas redondas no hover */
+  box-shadow: none; /* Remove a sombra no hover */
+}
+
+/* Efeito de clique no botão de busca */
+.btn-primary:active {
+  background-color: #fff; /* Verde-água mais escuro ao clicar */
+  border: 2px solid #17a2b8 ;
+  color: white; /* Texto em branco */
+  border-radius: 20px; /* Mantém as bordas redondas */
+  box-shadow: none; /* Remove a sombra ao clicar */
+}
+
+
+
+
+
+
+
+
+
+
+
+.toggle {
+  display: inline-block;
+  position: relative;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #d8d8d8;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-input + .toggle-label {
+  background-color: #FF0000;
+}
+
+/* Condicional para alterar cor de fundo quando o toggle estiver ativado */
+.toggle-input:checked + .toggle-label {
+  background-color: #00CED1; /* Cor azul quando ativado */
+}
+
+.toggle-label::after {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: left 0.3s, background-color 0.3s;
+}
+
+.toggle-input:checked + .toggle-label::after {
+  left: calc(100% - 20px);
+  
+  /* Condicional para alterar cor da bolinha quando o toggle estiver ativado */
+  background-color: #fff; /* Cor azul quando ativado */
+}
+
+.active-text {
+  color: #00CED1;
+}
+
+.inactive-text {
+  color: #FF0000;
+}
+
+
+
+
