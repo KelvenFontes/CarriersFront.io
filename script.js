@@ -149,7 +149,15 @@ async function getCarrierByCnpj() {
 // Função para obter todos os transportadores
 async function getAllCarriers() {
   try {
-    const response = await fetch(`${apiBaseUrl}/Carriers`);
+    const response = await fetch(`${apiBaseUrl}/carriers`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Origin': 'https://seu-frontend-aqui.com'
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
     if (response.ok) {
       const data = await response.json();
 
@@ -196,6 +204,7 @@ async function getAllCarriers() {
     else {
       const errorData = await response.json();
       console.error('Erro ao buscar dados:', errorData.message);
+    }
     }
   } catch (error) {
     console.error('Erro ao buscar dados:', error);
