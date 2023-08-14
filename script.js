@@ -1,4 +1,4 @@
-const apiBaseUrl = 'http://localhost:3000/api';
+const apiBaseUrl = 'http://44.196.117.157:8080/api';
 
 // Função para mostrar mensagem
 function showMessage(message, color) {
