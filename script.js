@@ -1,4 +1,4 @@
-const apiBaseUrl = 'http://apicarriers-env.eba-tbcaswzg.us-east-1.elasticbeanstalk.com/api';
+const apiBaseUrl = 'https://apicarriers-env.eba-tbcaswzg.us-east-1.elasticbeanstalk.com/api';
 
 // Função para mostrar mensagem
 function showMessage(message, color) {
