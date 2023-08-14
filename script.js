@@ -1,4 +1,4 @@
-const apiBaseUrl = 'https://apicarriers-env.eba-tbcaswzg.us-east-1.elasticbeanstalk.com/api';
+const apiBaseUrl = 'http://apicarriers-env.eba-tbcaswzg.us-east-1.elasticbeanstalk.com/api';
 
 // Função para mostrar mensagem
 function showMessage(message, color) {
@@ -155,6 +155,8 @@ async function getAllCarriers() {
 
       if (data) {
         const carriers = data.transporters;
+
+        console.log(carriers);
 
         showMessage(data.message, 'success');
 
